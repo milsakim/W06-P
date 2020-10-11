@@ -30,15 +30,19 @@
             <label>emp_no: </label>
             <input type="text" name="emp_no" value="<?=$row['emp_no']?>" placeholder="emp_no"><br>
             <label>birth_date(0000-00-00): </label>
-            <input type="text" name="birth_date" value="<?=$row['birth_date']?>" placeholder="birth_date"><br>
+            <input type="date" name="birth_date" value="<?=$row['birth_date']?>" placeholder="birth_date"><br>
             <label>first_name: </label>
             <input type="text" name="first_name" value="<?=$row['first_name']?>" placeholder="first_name"><br>
             <label>last_name: </label>
             <input type="text" name="last_name" value="<?=$row['last_name']?>" placeholder="last_name"><br>
             <label>gender(M or F): </label>
-            <input type="text" name="gender" value="<?=$row['gender']?>" placeholder="gender"><br>
+            <!-- <input type="text" name="gender" value="<?=$row['gender']?>" placeholder="gender"><br> -->
+            <select name='gender'>
+                <option value="F">Female</option>
+                <option value="M">Male</option>
+            </select> <br>
             <label>hire_date(0000-00-00): </label>
-            <input type="text" name="hire_date" value="<?=$row['hire_date']?>" placeholder="hire_date"><br>
+            <input type="date" name="hire_date" value="<?=$row['hire_date']?>" placeholder="hire_date"><br>
             <input type="submit" value="Update">
         </form>
     </body>
